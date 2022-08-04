@@ -1,14 +1,16 @@
 import styled from 'styled-components'
+import backgroundImg from '../../assets/Background.svg'
 
-export const HomeContainer = styled.div`
+export const HomeContainer = styled.div``
+
+export const HomeHeader = styled.div`
   display: flex;
   align-items: top;
   justify-content: space-between;
   padding: 5.875rem 0 5.875rem 0;
-`
+  background-image: url(${backgroundImg});
 
-export const HomeHeader = styled.div`
-  margin-right: 3.5rem;
+  gap: 3.5rem;
 
   strong {
     font-family: 'Baloo 2';
