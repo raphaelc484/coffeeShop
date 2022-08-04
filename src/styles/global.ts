@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import backgroundImg from '../assets/Background.svg'
 
 export const GlobalStyle = createGlobalStyle`
   *{
@@ -8,7 +9,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.white};
+    background-image: url(${backgroundImg});
+    background-repeat: no-repeat;
+    background-size: cover;
     color: ${(props) => props.theme['base-text']};
     -webkit-font-smoothing: antialiased;
   }
