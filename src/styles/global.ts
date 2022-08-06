@@ -7,15 +7,15 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0 ;
     box-sizing: border-box ;
   }
-
   body {
-    background-image: url(${backgroundImg});
+    /* background-image: url(${backgroundImg});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+
+    background:${(props) => props.theme.white} ;
     color: ${(props) => props.theme['base-text']};
     -webkit-font-smoothing: antialiased;
   }
-
   body,input,textarea,button{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;

@@ -1,7 +1,18 @@
 import styled from 'styled-components'
+import backgroundImg from '../../../../assets/Background.svg'
+
+export const HeaderContainer = styled.div`
+  background-image: url(${backgroundImg});
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+`
 
 export const HomeHeader = styled.div`
   display: flex;
+  margin: auto;
+  max-width: 70rem;
+
   align-items: top;
   justify-content: space-between;
   padding: 5.875rem 0 5.875rem 0;
