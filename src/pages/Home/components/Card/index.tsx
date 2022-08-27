@@ -1,4 +1,5 @@
-import { CardContainer } from './styles'
+import { BuyBox, CardContainer } from './styles'
+import { formatMoney } from '../../../../utils/formatMoney'
 
 interface CoffeeProps {
   foto: string
@@ -25,7 +26,10 @@ export function CardHome({
       </ul>
       <strong>{nome}</strong>
       <p>{explicacao}</p>
-      <p>{preco}</p>
+      <BuyBox>
+        <p>R$</p>
+        <strong>{formatMoney(preco)}</strong>
+      </BuyBox>
     </CardContainer>
   )
 }

@@ -2,10 +2,8 @@ import styled from 'styled-components'
 import backgroundImg from '../../../../assets/Background.svg'
 
 export const HeaderContainer = styled.div`
-  background-image: url(${backgroundImg});
-  background-repeat: repeat;
+  background: ${({ theme }) => `url(${backgroundImg}) no-repeat center`};
   background-size: cover;
-  background-position: center;
 `
 
 export const HomeHeader = styled.div`

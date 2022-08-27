@@ -1,5 +1,5 @@
 import { HeaderHome } from './components/Header'
-import { HomeContainer, ListOfCoffee, Teste } from './styles'
+import { HomeContainer, ListOfCoffee, OurCoffees } from './styles'
 import coffeeCommun from '../../assets/Coffee.svg'
 import { CardHome } from './components/Card'
 
@@ -50,9 +50,9 @@ export function Home() {
   return (
     <HomeContainer>
       <HeaderHome />
-      <Teste>
+      <OurCoffees>
         <strong>Nossos cafés</strong>
-      </Teste>
+      </OurCoffees>
 
       <ListOfCoffee>
         {coffeeOptions.map((option) => {
